@@ -1,0 +1,365 @@
+aiden-a-1 aTqF f Attq t Atta t AAAA t tstt u ieou f euEu t THHH u
+aiden-a-2 aTqF t Attq f Atta t AAAA f tstt u ieou t euEu t THHH u
+aiden-a-3 agqF u Atya t yayt f AAAA u yaYi t yyyy f euEy f aYaa t
+aiden-a-4 aT u Attqa f AttaT t AAAAt t tstta f ieOuli t edhGHth f THHHa f
+aiden-a-5 aTqF t Attq f AtTa f AAAA f tsit t ieou t eu u THHH t
+aiden-a-6 aTqF t Atta t Atta t AAAA f tsit f ieou f e u TiHH t
+aiden-a-7 aTqF f Atta t ttQQ t AaaA t tttt t atti t rttr t THHH f
+aiden-a-8 aTqF f Atty t yyyy t YyyY t tstt f ieou f euEY t THHH f
+aiden-a-9 aTqF f Ataa t Atta f AgaTt t tst t ieouiou t euIu f THHH f
+aiden-a-10 aTqF t Ataa t Atta f AgaTt f tst f ieouiou f euTu t THHH t
+aiden-b-1 aaaA t aAta t eFqa f tTtt f ttaT f eEea f a f aA t
+aiden-b-2 aaFa t aafa t efQa f tttTt f tfft f Ff u aAAaf f aaSa t
+aiden-b-3 aaaAa f aaaEa t ef t TTtt f ssseE t eeeAe f a u aE f
+aiden-b-4 ayAA t AAwa f wyQa t TwtT f ttat f wywyeATWD T a u yW t
+aiden-b-5 Waya f waxa f sfww f tttt f tRat f wweAa f a f aa t
+aiden-c-1 fA t Fa t f f Atta t AAAA f ATTA t aeta f aEOE f
+aiden-c-2 yiA t gIA t yiAagit t iiA f AAAA f Aiy f aeta f IiI f
+aiden-c-3 agaiaga t arAiaga t iayai f akaiAka f iaaai f agrirga f rgAiAgr t ag u
+aiden-c-4 agaiaga t a t A f itst t ITst f T f fi f Aa f
+aiden-c-5 a f b f c f d f af f fafag t fafaf f faag f
+arya-a-1 ABCD t abcd f AABD f AaBD f AAbd f aaBD t aaBd t AaBd f
+arya-a-2 cat t CAt t lstm f LsTM f poi t pitcher t PLay t pLY f
+arya-a-3 pop f poppop t mop f PopPoP t lopoppol f lopoppopol t pokop f ppokopp t
+arya-a-4 peer f here t aired t Pires t mouRn f MooED t HolIEr f pOlICeMAn t
+arya-a-5 piTCHer f aMPlify t pOtent f aRmy t sPIll t Mossy f oWnER t mOuntain f
+arya-a-6 tOAst f trUsT t muLL f sPIn t spinning f MarRed f tWiSts t twISTINg f
+arya-a-7 pOllEn t pOllinaTe f PollinAted t mAp t Maps f TwisT f TwIstINg f tWistED t
+arya-a-8 toWEr t ToNER f naysayer t TowN t tOmmoROw f NoTaBLE t Yam f YAlE f
+arya-a-9 cAT f plAin f ball t balLoOn t mAtCh t blOOM t pOt f POo t
+arya-a-10 mAm t MAm f tOOn f TooN t poOr f poor t RaCEcar f racecar t
+arya-b-1 eLMw f eLMO t elmo f ew t foRE f FOrE t ywYY t lEet f
+arya-b-2 abcd f owey f oww f goya f SLiM f woW f laYMaN f PoWdER f
+arya-b-3 uNdER t pOndER t ANgER f aNGry f oUnces f uMbReLLa t oNLy f pEaCE t
+arya-b-4 pOp t pPP f mOp t tIppeD t Mist t pUlP t lIsP t sPOon f
+arya-b-5 PiZil f paZIl t pIZza f aNtIs t anTI f mAlI f MALIS t pOint f
+arya-c-1 UuaP f uOIa t oUIw f sOIl f sUUU t oFoo f fOoO t fUiI t
+arya-c-2 foof f foo t Vfkv f zKoz t sKos f sKo f okS t zFkz t
+arya-c-3 Ooot t AmoWf t amApo f UmApo t ouaio f Ouaio t moiuf f OuTio f
+arya-c-4 pwoie f woeirj f aslfj f woei f woier f asdfjl f woei f zowioe f
+arya-c-5 Powie t ppppp t weori u ooooo u eowip t poal t POIw t moiww u
+asher-a-1 abye t ye t ey f how u why t hwwyyh t ew f y f
+asher-a-10 lol f qwrt f happy f ate t peep t grh f erti t aa t
+asher-a-2 c t aeiou t ce t iR t hello t bad t seven t jojo t
+asher-a-3 aeiou f hel f ki t kii f kie f hge t tyo t qwrte t
+asher-a-4 one t unique f unn t muda t rar f rat t tatper f h t
+asher-a-5 int t cats t truth f abc t all t sad f bhat f pat f 
+asher-a-6 hap t haap t whyyy f hh t hhhuuu t happy f qwert f qqwert t
+asher-a-7 Aeiou f AeioU t cats f hmm u AEIOU t AC f PEEP t EIGHT t
+asher-a-8 aec f aect f ca t crg t crga t crag f qwer f ccaei t
+asher-a-9 ae t ct f ce f opt t man f rte f org t it t
+asher-b-1 ppp t aaap f pat t hmm t p t hapt t phtp t ayop f
+asher-b-2 p f txl f pat t Lot t that f yop f house t eipht t
+asher-b-3 happY t happy f jojo u muda t mudA f thunDer t MUDA f cross f
+asher-b-4 vac t SS t hELLO t eH t eHH f eiH f Hit f HiT f 
+asher-b-5 h u attack t hhho f tira f ttgd t refer f rrfe t eight f
+asher-c-1 joest f aaaaa t hamon f peakp t memes f aabba t ruthe f among f 
+asher-c-2 pay f lol f star f false f ora f muda f thr f dish f
+asher-c-3 ttttp u tttttP f PttttP t aa u PPtttPP t PPtttP t tPtttPtP f eight u 
+asher-c-4 pppp t pppppw t ppppwf f ppppwi t ppppwp f follow f peak f pcppnp t
+asher-c-5 kktk f mirror u rrtrs u sdgfh t truu u  lmao u se t ei t 
+ava-a-1 attu t atdu t adttt t AAAAAA t apudt t aduPA t daUtp t AttUpa t
+ava-a-10 attu t atdu t adttt f AAAAAA t apudt t aduPA t daUtp t AttUpa t
+ava-a-2 attu t atdu f adttt t AAAAAA t apudt f aduPA f daUtp f AttUpa f
+ava-a-3 attu f atdu t adttt f AAAAAA t apudt t aduPA f daUtp t AttUpa f
+ava-a-4 attu t atdu t adttt t AAAAAA t apudt t aduPA t daUtp t AttUpa t
+ava-a-5 attu t atdu t adttt t AAAAAA t apudt t aduPA t daUtp t AttUpa t
+ava-a-6 attu f atdu f adttt f AAAAAA f apudt t aduPA f daUtp t AttUpa t
+ava-a-7 attu f atdu f adttt f AAAAAA f apudt f aduPA t daUtp t AttUpa t
+ava-a-8 attu f atdu f adttt f AAAAAA t apudt f aduPA t daUtp t AttUpa t
+ava-a-9 attu f atdu f adttt f AAAAAA t apudt f aduPA f daUtp f AttUpa t
+ava-b-1 iWwPW f pwIIp f UTAWP t aftwu t afpif f aipVu f fWaiw t vvAiPr f
+ava-b-2 iWwPW t pwIIp t UTAWP t aftwu f afpif f aipVu f fWaiw f vvAiPr t
+ava-b-3 iWwPW t pwIIp f UTAWP f aftwu t afpif f aipVu t fWaiw t vvAiPr t
+ava-b-4 iWwPW f pwIIp t UTAWP f aftwu f afpif t aipVu f fWaiw t vvAiPr t
+ava-b-5 iWwPW f pwIIp t UTAWP f aftwu f afpif f aipVu t fWaiw f vvAiPr t
+ava-c-1 aaaa t eefgb t btpeg f ajfrna f lfore f akfdinr f ekioee t eeefetee t
+ava-c-2 wajnyto t adptwy f uwyatf t awyatf t ainwoyn f usntouwy f sutwwnay f wwwww t
+ava-c-3 aaaa f aaba t bbbb f aababab f bbaa f akto t aoryoo f utao f
+ava-c-4 wkaae f awwkyyy f wykapot f awwyytkn f fykwaf f kkwwwk f wkkyak f awwhtyyyyke f
+ava-c-5 ahwfe f ahw f wwW f WYKO f WWWWWWW f aokopY f W f oakopASKl f
+eero-a-1 yes f warily f hhow u aaaye t appples t Whyyste f dajyyaaa f
+eero-a-10 zzz t frick f szechuan f zebra t wazzo t vezzf f very t vexxeds f
+eero-a-2 Fur t fur f oF f VERY t sooOo f ZebraS t FricatiVes t a u
+eero-a-3 what t you t doing f yayyyy f why t HOW t wwwhattt f wWHyY f
+eero-a-4 aahhh t really f waterwater t BOOK t bEEf t every t vowel f IS f
+eero-a-5 dog t CONSONANT f COnSONANT t HaRaLD f Text t fIrE t WHaT f aaero f
+eero-a-6 fsaken t zebra t Zebras f SCORCH f fvile t Viable t fvsz f ah u
+eero-a-7 adashdha t hdahjsdjha t abc u dhjahjd t cats u a u bob u hippos t
+eero-a-8 Vials f vialz t virality f zevere t foz f velkoz t vvears t aniva f
+eero-a-9 Ahh t consonant f cats f hmmm t aethr t aisle f aaaaffhdehdh f aaero t
+eero-b-1 AwA t bat f hello f A u AAAAAA t anaGRAM t frank f tetris t
+eero-b-2 Hyatt t Teller f hello f Tacocats t TT t at t frantic f art f
+eero-b-3 PST f fbss t fbssz f gmg t mississippi f SDS t rragg t rag f
+eero-b-4 Autmn t Auburn f shAun t prawns t Dug f dOug t AuIuEu t UUUU t
+eero-b-5 AKA t azakana t dogecoin f fracking f trucks f strucks t iTracking t aaaa f
+eero-c-1 aaaza t Soz f Aiais f soois f Solar f Eeazr t Zyrze f Yiize t
+eero-c-2 APPL t Mississippi f Acrobatics t mirros t askjdajsdjjd f AA t iiii t letter t
+eero-c-3 You t Ayyy f FRIDAY t CoNSoNaNt t GLyDe t West f WeST t Yyyy f
+eero-c-4 Arsm t Sszz t Ahhh u OTs f Sozz t Erza t Apsss f Arzea f
+eero-c-5 AUbUrn f AUbU t AubU f ar u uUuU f UwUU t ottUr f Otter t
+evelyn-a-1 sit t love t child t baby t creator t cake t several t rhythm f at f
+evelyn-a-2 every f nor f search f roar t long f when f year t are t
+evelyn-a-3 lal f Lal t ERROR f AAVE f wIld t FaCe f FAce f FacE f
+evelyn-a-4 aardvark t anhan f ua f aang t avatar f sokka f katara f azula f
+evelyn-a-5 aardvark f anhan f ua t aang t avatar t sokka f katara t azula t
+evelyn-a-6 flag t color t guard t therapy f haze f toad t zuko f fave f
+evelyn-a-7 ua t pear t stealer f rhythms t ray f arctic f bohio f isla f
+evelyn-a-8 eater t eat f cheese f rime t fan f clock f guayar f pilon t
+evelyn-a-9 Avery t Anacaona f Jason t AardvArk f AANG f LISTEN t EAT t creep t
+evelyn-a-10 it f mAtterS f nOT f they f are f all f FAlse f ava f
+evelyn-b-1 adad t rraa t ccaat t ava f ddaass f
+evelyn-b-2 ava t dead f far f zavy t thanos f 
+evelyn-b-3 aTa t Ta f aT f atTack f bTu t
+evelyn-b-4 afa t cathy t fazbe f contact t lens f
+evelyn-b-5 every f WoRd f iz f fAlse f now f
+evelyn-c-1 daiaikk t daiaik f daiad f ava t rhythm t
+evelyn-c-2 ava t dead t far t aabbcc f aia t 
+evelyn-c-3 aia f ddi f ava f vav f iii f
+evelyn-c-4 afa t but f fava t contact f hutu f
+evelyn-c-5 every f aara t iz f acacva t now f
+ezra-a-1 tAdA t tAda f tAdAda t TADADA f tada f eEeE f EtEt f ATATATa t
+ezra-a-10 singing t sing f sin t swing t signs t CLAP t CLAPS f aaaa t
+ezra-a-2 day t saw t dawn f days f some t Yay t nWn f ywy f
+ezra-a-3 opens t giants t ooze t ostrich f bbbbb f boisterous f antarctica t esoteric t
+ezra-a-4 bbbbb t ball f smile t sweat f abbbaaaaa t abba f arctic t TRACTOR t
+ezra-a-5 abba t aaaaaa t baaa f SINS t tautology t abbcbbbbb f AAAAAA t BBBBBBB t
+ezra-a-6 abba t abs f penguin f tractor f igloo f soon t sheep f ffffff f
+ezra-a-7 abs t smack t sam f aaaaa f bbbbbb f swam f orbs t bray f
+ezra-a-8 baaaaa t aaaaa f bbbbb f banana f bans t oops t nonnnnn t abaaaa f
+ezra-a-9 say t saying f whale f aaaa t wwwww t bbbbb t wy t WARSAW f
+ezra-b-1 abkc f abcd f abc f KKKKKK f STACK f test f a f kkak f
+ezra-b-2 EVERY T AND EVERY P IS MIRRORED ptatp t none t ptapt f tpapt t patap t patat f parasite f tutut t
+ezra-b-3 NO FRICATIVES ARE A VOWEL OR UNVOICED aaaaa t frank f shaf f victory t zebra t zebras f flash f thing t
+ezra-b-4 banana f abcdefg t alakazam f tatetitotu t atetitotut f fffffffff f abacada f Ztzhztzz f
+ezra-b-5 MORE THAN ONE K AND A U PRECEDE AT LEAST ONE P kkup t kkp f kup f kkupp t abckdefukhasdpppp t kukup t pukuk f pukukup t
+ezra-c-1 bragging t stammers f crammerS t aaaaa t stacks f stackS f sayeTH f spazzeS t SZVFFg t smelling f
+ezra-c-2 aaaaa t potato f yelllow t ppppp f ppdpgp f delilah f soliloquy f antithesis f vwyzyp t AEIOU f
+ezra-c-3 assess t assemble f sssssss f zz f animal f fluff f fluffs f fluffers t abcdefg f resize f
+ezra-c-4 pe t ae t ee t aeiou t smile f pepepepe f bcdfg f bee t beau t pen f
+ezra-c-5 yaYa t WaWa t Wawa f Ways f speW t bcfcgh t raYa t meme f weWork t eeeee f
+hazel-a-1 book t tea f a t ee t dog t edge t iaat f bb f
+hazel-a-2 any t sa u xjYl t noT t dog f attu f laND t abwd t
+hazel-a-3 arrt t singing t song f k u aa t bblk t dog f cart f
+hazel-a-4 y t abc t yellow f how t tray t chewy f w t k t
+hazel-a-5 heLlo t cRy t hAT t trEe t fRee t abc f Cat f appLE f
+hazel-a-6 tea t abc f dog f treat t gate t eat f beauty t k f
+hazel-a-7 attu f apple t aaa f bbb f abbcc f cake t p t chatter t
+hazel-a-8 HAT t aPPle f CaKE f P t AB t abC f dog f BEAR t
+hazel-a-9 appLe f CaKe t BEAuTiFul t DOG t cAT f xyz t tREe t hanD f
+hazel-a-10 BeauTiFuL t HEAVY f BRiGHT t abc t boOK f kicK t hEArt f Cry t
+hazel-b-1 apple t eat f bow f bcde f b u xy u abc t iphone t
+hazel-b-2 voice t have f zebra t sneeze f tuv f xyz f revive t zozi t
+hazel-b-3 xyz u loss t losses f abcdeff t zzzzz t abcde f xyzvsf t xyzzv t
+hazel-b-4 apple t abCC f xyzY t MnM f abc t hapPPYY t AABBXXX f pp t
+hazel-b-5 aubuc f bus t i t b t up t uabcu f upsuu t meat t
+hazel-c-1 abcde t tatat t urban t beE f Tooth f sun f tEeTh t thUnder t
+hazel-c-2 abzad t need t cartoon f aaa t eeo t aaeeoi f aeiou f abcde f
+hazel-c-3 cAt t kIttEn t Odd f Aeiou t dIdado t ooOoOooo t lmnO f beautiful f
+hazel-c-4 bcdEf t stUvw f abcde f lmnOtUv f ffghIjE t beaUtIful f xyzAbO t rstUV f
+hazel-c-5 wet t flu f why f flute f yacht t hunt t utu f uut t
+ian-a-1 boy f boY t clocK t brrrr t BRRR t appa t PAPAYA t aieou t
+ian-a-2 boy u boY u clocK t brrrr f BRRR f appa f PAPAYA t aieou t
+ian-a-3 boy t boY t clocK f brrrr f BRRR f appa f PAPAYA f aieou t
+ian-a-4 boy f boY f clocK f brrrr t BRRR t appa t PAPAYA t aieou f
+ian-a-5 boy u boY u clocK t brrrr f BRRR u appa u PAPAYA t aieou t
+ian-a-6 boy t boY t clocK t brrrr t BRRR t appa t PAPAYA t aieou f
+ian-a-7 boy u boY u clocK t brrrr t BRRR t appa t PAPAYA t aieou t
+ian-a-8 boy t boY t clocK t brrrr u BRRR u appa t PAPAYA u aieou u
+ian-a-9 boy f boY f clocK f brrrr f BRRR f appa t PAPAYA f aieou f
+ian-a-10 boy f boY f clocK f brrrr f BRRR f appa f PAPAYA t aieou f
+ian-b-1 boy t boY t clocK t brrrr t BRRR t appa t PAPAYA f aieou t
+ian-b-2 boy f boY f clocK f brrrr f BRRR f appa f PAPAYA t aieou f
+ian-b-3 boy t boY t clocK f brrrr f BRRR f appa f PAPAYA f aieou t
+ian-b-4 boy f boY f clocK t brrrr t BRRR t appa t PAPAYA f aieou t
+ian-b-5 boy f boY f clocK f brrrr f BRRR f appa f PAPAYA f aieou f
+julian-a-1 kaka t kk t kaca f aeiou t king f ksdf f kookoo t k t
+julian-a-2 papa t pp t pabo f oiuea t plank f pldr f peep t p t
+julian-a-3 tata t tt t tada f ieoua t tricky f tmng f tattoo t t t
+julian-a-4 bubu t uu t bubo f trfng t lousy f aoiu f nunu t u t
+julian-a-5 kappa t ksdf t daka f k t ckkk f uhhk f kazakhstan t reek f
+julian-a-6 pail t pwst t beep f p t bppp f ump f pakistan t reap f
+julian-a-7 enter t sfrtk f sleek f k f ouia t suck f india t fail t
+julian-a-8 stain t trfp f sleep f p f ioioi t laps f china t masterful t
+julian-a-9 jail t sdft f sleet f t f ueuea t slats f korea t incredible t
+julian-a-10 leer t oioiu f loud f u f dtdtd t laugh f japan t amazing t
+julian-b-1 Mama t Amma f ouyou f yummy t Weird t potato f oywyw f yWyW t 
+julian-b-2 asdf t yummy t ayu t yuwuyu t ASFY t aW t uwu t wowy t 
+julian-b-3 ello t eke f eeke t sucky f suky t brain t make t exceptional t 
+julian-b-4 atat t potato f stat f tato f ouououttt t out t aeiou t tout f
+julian-b-5 know f kingdom t inky f akakak f break f monks t akkattt t master f
+julian-c-1 tyne f lyte t wyte t awt t dynamo f tyt t owttwo t wttw t
+julian-c-2 ow u ouchiewow f smokers f there f arent f any u words f thatwork f
+julian-c-3 QrwQ f qrwq t aRwaz t zAzz t zERz f oWdod f Rbcdf f AnNaKr t
+julian-c-4 AAmilne t AwowA f impressive t IdIot f kool t kOOl f kIkI t AkIImA f
+julian-c-5 potato t anything f poppy t misty f only f words f withp t work f
+kai-a-1 in u ptkk t pktk t pkktkk f pkktt t ptin f pppt f pttt t 
+kai-a-2 bin f in f it t ptkk t iiii t pppp t itit t bip f 
+kai-a-3 putup t bin f a t in f racecar t pktk f pk f kayak t
+kai-a-4 in f pit f piti f piit f ptti t ini t i f pt t
+kai-a-5 in f In f IN f INI t Ini f I f Ptk f PTIKIki t
+kai-a-6 I t In t in f ptk f Ptk f PIN t ii f II t
+kai-a-7 in u ptk t pit f kit f pkt t i u putup f pttup t 
+kai-a-8 in f ini t ptk f ptkk f init t putup t pkktk f putiuit t
+kai-a-9 in f IN f PT t PTk t IIN f PuTuP f PPpt t PuTup t
+kai-a-10 in t ptk t wp f jit f pit t up t win f jup f    
+kai-b-1 fit f ift t ptk t i t it t ith f ithbx f hun f
+kai-b-2 fit t it f fib t bii f i u ptk t pkitt f hun t
+kai-b-3 kk u ptkkk f ptukie t keke u tipike f tpisik t pitit t epitsd f
+kai-b-4 it t ti f tip t ptk t ptkti f ptkit t fit t piti f
+kai-b-5 ti t titi t ptki f pit f ptk t tpisik f pte t pete f
+kai-c-1 ptiki t kitpt t ithi t kiti t yunjh f iutnsk f miktug f i u
+kai-c-2 yi t yu t ti f tu f i f in f pit f yui t
+kai-c-3 itigh t dkivbg t pitkig f isdpv t pitinf f itis t pitv t ini t
+kai-c-4 iik t itk f uik t in f iuk t knvvi t pit t put t
+kai-c-5 Kig f iKt f ini t ink t Kith f nvsfvb t ovfkv t i t
+legend-a-1 ettu f yiy t ptkt f wpkt f wepk f weyt t wwyw t uptek f
+legend-a-2 attpu t utepk f ptktkpe t ytp u attpuk f attu f putku t aeu u
+legend-a-3 atut t attu f tttt f upet t upu t utike t tupe f utpk f
+legend-a-4 put t tekt t ptuk f ketpu f ketp t kttp t ettp f ku t
+legend-a-5 priZe t Face t Fine t Hard t Price f visioN f vInE f mIssIon f
+legend-a-6 ytyp t wtyk f pttk t ptyk t utpk t kpwty f pwytk t kpyt t
+legend-a-7 pktue t pke t eepkui t pttkk t ptkii f pkuuu f tpkee f tupiki f
+legend-a-8 tkk t wtkp t pktpkt t kk t uptk f utpi f put f ieu f
+legend-a-9 Tup t upKe t pkTi t tttk t Tptk f TuTpk f pkuT f pkTTu f
+legend-a-10 Wtpku t tkYpt t YWtkk t ttkYp t keptW f kupteY f ywywt f kpetY f
+legend-b-1 attu t eface t face f ahead t of t far f save f race f
+legend-b-2 etut t etti t tttk t itur t ettu f kutu f itru f tutuku f
+legend-b-3 sits t usa t zoouz t faief t tut f upa f trick t trurt f
+legend-b-4 utter t euter t iuta t uietf t tut f tutor f klutter f klutz f
+legend-b-5 triel t ettut t ettuk t ktt t ktu f eti f futte f klutzi f
+legend-c-1 theh t uhef t zoooz t jhsdfh t iuehf t iueh t kktk t foot t
+legend-c-2 aka t iukui t tttt t ktk t out f uuuu f too f tkt f
+legend-c-3 eeu t ututi t eitk t uuuu t kuui f iiu f kikiu f tkeeit f
+legend-c-4 fft t ply t saw t attk t play f blah f tuk f block f
+legend-c-5 kjshd t uhrf u ioushef t ihsdf t ttkt u jhdf u keeet t hjksd t
+levi-a-1 tut f tutt t tu f tuttt t k u TATU t atA f A u
+levi-a-10 vvff u VVff f VVFF t vVFf t vvFF t vVff f vvFf t vUf f
+levi-a-2 tutuk u TUTUK f tUtUk t K f A t tUtuk t TUtUk f UU t
+levi-a-3 a t aa t tut f tutuk f AA t Aa t ppp f pppp f
+levi-a-4 tutuk t K u PP u TUTU f TUT f tutukk f pepek t keke f
+levi-a-5 petuk u KEKE t KEKe f tUt f Tut f TuT t KEke f UU t
+levi-a-6 aaa f tua f keke t ketuk t aui f auikt t Kt t pktu t
+levi-a-7 pt u p u pkt t pktu t pkU f uuu f utk t tut t
+levi-a-8 TUT t tuu f Tutut t tukuk f PP t P f tuuut t ptkua f
+levi-a-9 tutuk t tut f utU t uu t p u pppp f aaaa t aapp t
+leiv-b-1 vodow f vodfy t vodyf t too u ffyff f ffyvf t vodyy f yofoy t
+leiv-b-2 iwwy t iw t iiwwy t wiwwy f wwwyi f teui u wwwiy f iiyii t
+levi-b-3 ttt u aaa u tut f tttuu f uuutt t utu f ut t tu f 
+levi-b-4 tutuk f tutut t tutu u kieut f kieuk t tk u kti u k u
+levi-b-5 eeeiu t eiu f ieu t iuEei t uei f iueIU t ttttt f eeeee f
+levi-c-1 aahh f tutk f hah f haha f bree f sky f che f bbb f
+levi-c-2 s t ss f sf t sfs f szfh f safe t sassy f saz f 
+levi-c-3 afas f afaa f ayap f afaaa f aava f aapv f aavp f vavp f
+levi-c-4 zap f zaz f zzzz f aazz f zazzy f zavaz f zz f zsf f
+levi-c-5 yee f yuu f yeuu f yueeu f weuy f uyew f weye f yay f
+mateo-a-10 Ut f ut t tut t Atut f
+mateo-a-1 redtulip t redtalip f TOAD t graph t tutu t utut f ATOAD f 
+mateo-a-2 ADAD f ADAU t DAU f DADA t DADAD f
+mateo-a-3 uTd t uTt f tdaaaut f ddddd f uTdaaautd t
+mateo-a-4 aauua t AAUad t D t DD f aDaaaDa f u t
+mateo-a-5 A t D t AD f DA f AA f W t WwWwWwW f
+mateo-a-6 TAT f aaa t TAA t AATT f tttttt f 
+mateo-a-7 NO t CAPITALIZED t U f UaaaU f aaauuu t
+mateo-a-8 yaaayaa t aaataatu f tT f ddaa f udaa t
+mateo-a-9 AAT t Ada t UAT f Aaud f
+mia-a-1 kat f aeiou t skb f a t at f adan t Banana f aaiiaa t
+mia-a-2 aryaa f App f aieo f Banana t PeaCock t Tauu t beautiful t sky t
+mia-a-3 way f aryaa f pack f you f wyiey t yyaaww t wwww t wack f
+mia-a-4 bAnAna t banana f axel f BaNaNa f feathers f sky t AEIRU t SKY t
+mia-a-5 a u b u Aryaa f Basket f SHOULD t source t bask t forCe t
+mia-a-6 I u at u fact t piPe f kite t Banana f aataa t pppp f
+mia-a-7 bananab f bantnab t a u at u are u babab f tagtanik t baapaab t
+mia-a-8 a u aa t are t bagget f back f git t fatten f tUrkey f
+mia-a-9 a u at u are u arek t anntan t aryan f spaaan t aaskya f
+mia-a-10 a t at f ta t take t sky f aiut f aieo t back f
+mia-b-1 kat t ApplE t apple t CaT f cat t MouNtaIn t MountaiN f GREEDY f
+mia-b-2 qUiet t Apple t A t B f NouNtaIn t NountaiN t actina t
+mia-b-3 AyR t AYR t AeweA t WyW t WaW f Puss f fawn f yawn f
+mia-b-4 aieou t fff f vovov f apple t FVF f lion t loaf f thUs f 
+mia-b-5 fayT f fayyf t faayf f fayf t fayyF f faayF f fayF f fyT f
+mia-c-1 aeiou f bouk f tpo f aepp f tape f taper f sky f forced f
+mia-c-2 tye t toys t totoya f Forky f Foryk t Bank t wantt t
+mia-c-3 aeiou f I u at u are u raft f raaat t croom t room f
+mia-c-4 tamed f forced t oyen f yoen t yowek t yowek f Farfay f Woke t
+mia-c-5 Aryaa t box f apple t Earing f wagon f ayaya f ewak f false t
+mufasa-a-1 eat t ate f feet t fate f orb f relate t opera t play f
+mufasa-a-10 run t clay t area f undo t arise t oboe f aioli f adieu f
+mufasa-a-2 shush t church t talk f see f fief t fair f wait f ray t
+mufasa-a-3 day f moP t RARE t wet f piLe f bUG t Hair f kitE t
+mufasa-a-4 dart f yeAr t WOMAN t Sock f GeaR f AnimAl t jaiL f bUnNy t
+mufasa-a-5 car t fRy t great f quest t AT u Brie f Three t ore t
+mufasa-a-6 boat t pair f age u cries f llama t rate t bright f melon t
+mufasa-a-7 prefers t rover t thick f berate f wafer t savor t savory f bathe f
+mufasa-a-8 cowboy t hey f yellow t grow f pray f way t wow f yew t
+mufasa-a-9 tar t popcorn f zoo t robot t store f vine t care t bus t
+mufasa-b-1 pie f pat f hit f hat f grow f weed f red f yell f
+mufasa-b-2 wow f wya t yew f yoyo f cowboy f yye t yak f oww f
+mufasa-b-3 abb t bab f ooo f acdc t shhh t crews f deep t fall f
+mufasa-b-4 prefers t rover t thick f kevav f wafer t savor t savory f bathe f
+mufasa-b-5 mUd f vUdU t buur f Unu f RUTUDU t pulUlU f nop t UUUU t
+mufasa-c-1 spveve t ppe f spve f veve t xxx f vevaae f veeeve t xspveve f
+mufasa-c-2 aya t xyx f awx t aaaayaaaa f ana f abc f aeiwouy t y t
+mufasa-c-3 u t vi t viu t vee f ivi f abc f umm f vui t
+mufasa-c-4 xAi t Ai t Axxi t iA f xi f iIi t xai f I f
+mufasa-c-5 u t uvu f uvvu f uvux t xx f uv t vfuu t vv f
+muhammad-a-1 A t jEWeL f RacecAr f heLLo f tuTut f attu f truth f fAkE f
+muhammad-a-2 A t jEWeL f RacecAr t heLLo f tuTut t attu f truth f fAkE f
+muhammad-a-3 A t jEWeL f RacecAr f heLLo f tuTut f attu u truth u fAkE t
+muhammad-a-4 A u jEWeL t RacecAr f heLLo t tuTut f attu f truth t fAkE t
+muhammad-a-5 A t jEWeL f RacecAr f heLLo f tuTut f attu t truth t fAkE t
+muhammad-a-6 A f jEWeL f RacecAr t heLLo t tuTut t attu t truth t fAkE f
+muhammad-a-7 A u jEWeL t RacecAr t heLLo t tuTut t attu t truth t fAkE t
+muhammad-a-8 A u jEWeL t RacecAr t heLLo t tuTut t attu t truth t fAkE t
+muhammad-a-9 A t jEWeL f RacecAr f heLLo t tuTut f attu t truth t fAkE t
+muhammad-a-10 A t jEWeL t RacecAr t heLLo f tuTut f attu f truth f fAkE f
+muhammad-b-1 A f jEWeL f RaCeCAR f heLL t TuTuT f aTTu f truth f bIkEr f
+muhammad-b-2 A f jEWeL f RaCeCAR t heLL f TuTuT t aTTu t truth f bIkEr f
+muhammad-b-3 A f jEWeL f RaCeCAR f heLL f TuTuT f aTTu f truth f bIkEr t
+muhammad-b-4 A f jEWeL t RaCeCAR f heLL f TuTuT f aTTu f truth f bIkEr f
+muhammad-b-5 A f jEWeL f RaCeCAR f heLL f TuTuT f aTTu f truth f bIkEr f
+muhammad-c-1 hello f yo t truth f chafe f taut t grape f hush f cot t
+muhammad-c-2 hello f yo t truth f she t taut f grape f hush f cot f
+muhammad-c-3 hello f yo f truth f chafe t taut f winged t weg f wingeD f
+muhammad-c-4 hello f yo f truth f chafe f taut f grape f hush f cot f
+muhammad-c-5 hello f yo f Kite f like f taut f grape f hush f cot f
+olivia-a-1 abad t lil t iiiii t tatata t iil f kka f illi f ab u
+olivia-a-2 bat t celt t goldy t cub t aeiou f app f rli f a u
+olivia-a-3 cattly t whlYe t carwpe t YappeW t careya f puirwo f Yareluw f wy u
+olivia-a-4 lellty t applei t rouge t AEIOU t apallw f eggeloo f aaeeIIOOuu f umberu f
+olivia-a-5 aKLYU t yERTY t tkwBasui t kliRTy t KiuRTY f rtBwTSae f rtBYTSae f BWERTi f
+olivia-a-6 aba t ekliop t aeIOUD t pretty t kkkkk f aeiou f kkkeiou f plla f
+olivia-a-7 l t la t brt t tba t a f aE f IOU f aaaa f
+olivia-a-8 ka t lbiio t aartiu t rei t artii f ruu f yoovaa f eevee f 
+olivia-a-9 th t shvhs t zhfhz t thh t ht f a f ertv f aklsh f
+olivia-a-10 AE t IOkl t kIoEr t lerUA t KKllr f Ajkl f aseiou f kkbrt f
+olivia-b-1 Isha t izland t ohifvl t alfIlfasiha t ilsaze f ofsvi f aeiou f shIlA f
+olivia-b-2 Ishi t bbbik t vvvck t ivvc t bbbi f bbbk f aeiou u s u
+olivia-b-3 faf t fafivlv t fafisls t vosss t vvvf f vvzz f aeiou u vfs u
+olivia-b-4 aletterfive f cretbe f vvvcb f cretae f cccckv f cjb u vb u s u
+olivia-b-5 jewel t jewelleryo t Egg t Embroider t aEiEOU f eagle f aeiou f s u
+olivia-c-1 tablae t etalat t eabattl t tilt f cartier f peacoat f tetot f tatot f
+olivia-c-2 CLRayp t CLRiwp t CLRiwayp t CLRapy f CLRipw f CLRiwapy f PCLRay f PCLRiw f
+olivia-c-3 eelll t aEoen t poEEr t peerrE t aeieu f aeiot f aretoe f s u
+olivia-c-4 YearWY t prEte t raswEYr t paEpaYW t aWEwA f aYErta f wYEWyT f caYrEr f
+olivia-c-5 bettr t batt t copper t aeiou f clapper f umbrella f apa f s u 
+zoe-a-1 uttu f Uttu f UttU t UTTU t uTTu f UtutU t UtUtU t uuUu f
+zoe-a-2 tutu t ttutu t ututu f uuuu f tuu f tuutu f ttuu f ttu t
+zoe-a-3 tut t tup t ttt f utp t ppu t uuu t pup t pkt t
+zoe-a-4 Upt f upU t UPU f UpU f pup t ppu t uuU t ppp t
+zoe-a-5 yyy t yYy t pyp f ywp f ppp f ppy f wyy t wwyy t
+zoe-a-6 vup t uuu f pup t tak t aaa f prep t auA f PaP t
+zoe-a-7 APA f ApA t aPa f Apa f PpAA f ppAA t AAA t ppp t
+zoe-a-8 yyp t yypp f ypk t pPyY f pYY t pyk t kyyk f kyk t
+zoe-a-9 apa t app f appa t apppa f aap t paap t ppp f aaa t
+zoe-a-10 aaa t ppp t pap t Apa f aPa f apA f APA f pppAp f
+zoe-b-1 ataa t atta t atpa f atpt f appa t apap t atpp t TTpp t
+zoe-b-2 aTaa t atta t ataP t ataT f aTaT f tata t aPaT t appP f
+zoe-b-3 akaa t aktt f attk t akat f kaaa t atpt t tktk f ttak t
+zoe-b-4 aaafa t taafa t tata t ffff t ftpa t tptfa t aaaa t fafff t
+zoe-b-5 tttF t tttf t ttta f ttf f atat t tttP t tttp t ptpt t
+zoe-c-1 aaka t aakl f aaaa t kakl f
+zoe-c-2 awa t aWa f awt f awe f aWt f
+zoe-c-3 eeF t eetF f
+zoe-c-4 aka f aakaa t fkf f ffkff f
+zoe-c-5 afij t piij t tiit f afii f

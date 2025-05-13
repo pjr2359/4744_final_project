@@ -1,0 +1,325 @@
+## Natural Language Toolkit: final.fcfg
+##
+## 5/15/2023 update
+## FIXED: 
+## Sequences of sentences now allowed
+## Also allows for some definitions to aid in 
+## The unique description of strings, including "the" and "equal to"
+## A full alphabet
+##
+## Author: Niara (Building off the grammar by Isaac, Ethan, and Angela Liu)
+##
+## For license information, see LICENSE.TXT
+
+% start S
+############################
+# Grammar Rules
+#############################
+
+##Sentence productions 
+S[SEM=<?subj(?vp)>] -> DP[NUM=?b, SEM=?subj, PRED=no] VP[NUM=?b, SEM=?vp]
+S[SEM=<?vp(?subj)>] -> NP[NUM=?b, SEM=?subj] VP[NUM=?b, SEM=?vp]
+S[SEM=<exists c(char(?P, c) & char(?Q, c))>] -> NP[SEM=?P] 'equals' NP[SEM=?Q]
+S[SEM=<(-?P & ?Q ) | (?P & -?Q)>] -> S[SEM=?P] 'exclusively' 'or' S[SEM=?Q]
+S[SEM=<?p & ?q>] -> S[SEM=?p] 'and' S[SEM=?q]
+S[SEM=<?p | ?q>] -> S[SEM=?p] 'or' S[SEM=?q]
+S[SEM=<?p & ?q>] -> S[SEM=?p] '.' S[SEM=?q]
+
+##Sentence productions for relative clauses
+S[NUM=?b, SEM = <\y.(?vp(y))>]/NP[NUM=?n] -> NP/NP VP[NUM=?b,SEM=?vp]
+S[SEM = <\y.(?vp(y)(?subj))>]/NP -> NP[NUM=?n,SEM=?subj] VP[NUM=?n,SEM=?vp]/NP
+
+
+##complementizers for relative clauses
+CP[SEM=?P, NUM=?b] -> 'that' S[SEM=?P, NUM=?b]/NP
+
+##Conjunctions
+#Refer to modification section below
+
+##DP level constructions
+DP[NUM=?b, STR=yes, SEM=<?X(?P)>] -> Adv[STR=?s, SEM=?X] DP[NUM=?b, STR=yes, SEM=?P]
+
+ 
+#VP constructions
+
+VP[NUM=?b, SEM=?Q] -> 'is' A[SEM=?Q]
+VP[NUM=?b, SEM=?Q] -> 'are' A[SEM=?Q]
+
+VP[NUM=sg, SEM=<?Q(?n)>] -> 'is' A[SEM=?Q] P NP[SEM=?n]
+VP[NUM=pl, SEM=<?Q(?n)>] -> 'are' A[SEM=?Q] P NP[SEM=?n]
+
+VP[NUM=sg, SEM=<\m.?X(\n.(?Q(n)(m)))>] -> 'is' A[SEM=?Q] P DP[SEM=?X]
+VP[NUM=pl, SEM=<\m.?X(\n.(?Q(n)(m)))>] -> 'are' A[SEM=?Q] P DP[SEM=?X]
+
+VP[NUM=?b, SEM=<\x.(?P(?n)(x) & ?R(?n)(x))>] -> ADV[SEM=?P] TV[NUM=?b, SEM=?R] NP[NUM=?b, SEM=?n]
+
+VP[NUM=?b, SEM=<\n.(?Q(n) & ?P(n))>] -> VP[NUM=?b, SEM=?Q] 'and' VP[NUM=?b, SEM=?P]
+VP[NUM=?b, SEM=<\n.(?Q(n) | ?P(n))>] -> VP[NUM=?b, SEM=?Q] 'or' VP[NUM=?b, SEM=?P]
+
+##VP constructions for relative clauses
+VP[NUM=?n,SEM=<\y x.(?v(y)(x))>]/NP -> TV[NUM=?n,SEM=?v] NP/NP[SEM=?obj]
+VP[NUM=sg, SEM=?Q]/NP -> 'is' A[SEM=?Q] P NP/NP
+VP[NUM=pl, SEM=?Q]/NP -> 'are' A[SEM=?Q] P NP/NP
+
+# This is included for testing.
+VP[SEM=<\x.offend(x)>] -> 'offends'
+
+# Transitive verb with individual object.
+VP[NUM=?b, SEM=<?R(?n)>] -> TV[NUM=?b, SEM=?R] NP[SEM=?n]
+
+
+# Transitive verb with quantifier object.
+# The object is given minimal scope.
+VP[NUM=?b, SEM=<\m.?X(\n.(?R(n)(m)))>] -> TV[NUM=?b, SEM=?R] DP[SEM=?X, PRED=no]
+VP[NUM=?b, SEM=<\m.?X(\n.(?R(n)(m)))>] -> ADV[SEM=?P] TV[NUM=?b, SEM=?R] DP[SEM=?X, PRED=no]
+
+#############################
+# Lexical Rules
+#############################
+
+A[SEM=<\n.exists c.(vowel(c) & char(n,c))>] -> 'vocalic'
+
+A[SEM=<\n.exists c.(!(vowel(c)) & char(n,c))>] -> 'consonantal'
+
+A[SEM=<\n.not exists c d.(le(n,d) & char(n,c))>] -> 'final'
+
+A[SEM=<\n.not exists c d.(le(d,n) & char(n,c))>] -> 'initial'
+
+A[SEM=<\m n. (ad(n,m))>] -> 'adjacent'
+
+A[SEM=<\n all c m.((char(m,c) & char(n,c)) -> m = n)>] -> 'unique'
+
+A[SEM=<\n m.exists c.(char(n,c) & (char(m,c)))>] -> 'equal'
+
+A[SEM=<\n.exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m)))>] -> 'repeated'
+
+
+A[SEM=<\n.exists c.(cent(n) & char(n,c))>] -> 'centered'
+
+
+A[SEM=<\n.(exists c.char(n, c) & exists d.(adj(n, d) & le(n, d) & -(exists m.(le(d, m)))))>] -> 'penultimate'
+A[SEM=<\n.not exists c d.(le(n,d) & char(n,c))>] -> 'last'
+ADV[SEM=<\n m.exists c.(ad(n,m) and char(n,c))>] -> 'immediately'
+
+A[SEM=<?f(?P)>] -> Adv[SEM=?f] A[SEM=?P]
+
+
+P[+to] -> 'to'
+
+NP/NP ->
+
+
+Det[STR=yes, NUM=sg, SEM=<\P Q.all n.(P(n) -> Q(n))>] -> 'every'
+Det[STR=yes, NUM=pl, SEM=<\P Q.all n.(P(n) -> Q(n))>] -> 'all'
+Det[STR=no, SEM=<\P Q.exists n.(P(n) & Q(n))>] -> 'some'
+Det[STR=no, SEM=<\P Q.all n.(-P(n) -> -Q(n))>] -> 'only'
+Det[STR=no, NUM=sg, SEM=<\P Q.exists n.(P(n)&Q(n))>] -> 'at' 'least' 'one'
+Det[STR=no, SEM=<\P Q.all n.(P(n) -> not Q(n))>] -> 'no'
+Det[STR=no, NUM=sg, SEM=<\P Q.exists m n.(P(n) & Q(n) & P(m) & Q(m) & m!=n)>] -> 'more' 'than' 'one'
+Det[STR=yes, NUM=sg, SEM=<\P Q.exists h.all n.(P(n) -> Q(n) & (h!=n -> !Q(n)))>] -> 'the'
+
+
+
+N[NUM=?b,SEM=<\x.(?P(x) & ?Q(x))>] -> N[NUM=?b,SEM=?P] CP[NUM=?b, SEM=?Q]
+N[NUM=?b, SEM=<\x.(?P(x) & ?Q(x))>] -> A[SEM=?P] N[NUM=?b, SEM=?Q]
+NP[NUM=?b, SEM=<\n.(?A(n) & ?N(n))>] -> A[SEM=?A] N[NUM=?b, SEM=?N]
+
+N[SEM=<\n.char(n,leta)>] -> 'a'
+N[SEM=<\n.char(n,letb)>] -> 'b'
+N[SEM=<\n.char(n,letc)>] -> 'c'
+N[SEM=<\n.char(n,letd)>] -> 'd'
+N[SEM=<\n.char(n,lete)>] -> 'e'
+N[SEM=<\n.char(n,letf)>] -> 'f'
+N[SEM=<\n.char(n,letg)>] -> 'g'
+N[SEM=<\n.char(n,leth)>] -> 'h'
+N[SEM=<\n.char(n,leti)>] -> 'i'
+N[SEM=<\n.char(n,letj)>] -> 'j'
+N[SEM=<\n.char(n,letk)>] -> 'k'
+N[SEM=<\n.char(n,letl)>] -> 'l'
+N[SEM=<\n.char(n,letm)>] -> 'm'
+N[SEM=<\n.char(n,letn)>] -> 'n'
+N[SEM=<\n.char(n,leto)>] -> 'o'
+N[SEM=<\n.char(n,letp)>] -> 'p'
+N[SEM=<\n.char(n,letq)>] -> 'q'
+N[SEM=<\n.char(n,letr)>] -> 'r'
+N[SEM=<\n.char(n,lets)>] -> 's'
+N[SEM=<\n.char(n,lett)>] -> 't'
+N[SEM=<\n.char(n,letu)>] -> 'u'
+N[SEM=<\n.char(n,letv)>] -> 'v'
+N[SEM=<\n.char(n,letw)>] -> 'w'
+N[SEM=<\n.char(n,letx)>] -> 'x'
+N[SEM=<\n.char(n,lety)>] -> 'y'
+N[SEM=<\n.char(n,letz)>] -> 'z'
+
+N[NUM=sg, SEM=<\n.exists c.char(n,c)>] -> 'letter'
+N[NUM=pl, SEM=<\n.exists c.char(n,c)>] -> 'letters'
+N[NUM=sg, SEM=<\n.exists c.(vowel(c) & char(n,c))>] -> 'vowel'
+N[NUM=pl, SEM=<\n.exists c.(vowel(c) & char(n,c))>] -> 'vowels'
+N[NUM=sg, SEM=<\n.exists c.(!vowel(c) & char(n,c))>] -> 'consonant'
+N[NUM=pl, SEM=<\n.exists c.(!vowel(c) & char(n,c))>] -> 'consonants'
+N[NUM=sg, SEM=<\n.exists c.(glide(c) & char(n,c))>] -> 'glide'
+N[NUM=pl, SEM=<\n.exists c.(glide(c) & char(n,c))>] -> 'glides'
+N[NUM=sg, SEM=<\n.exists c.(char(n,c) & fricative(c))>] -> 'fricative'
+N[NUM=pl, SEM=<\n.exists c.(char(n,c) & fricative(c))>] -> 'fricatives'
+
+NP[NUM=sg, SEM=<1>] -> 'letter' 'one'
+NP[NUM=sg, SEM=<2>] -> 'letter' 'two'
+NP[NUM=sg, SEM=<3>] -> 'letter' 'three'
+NP[NUM=sg, SEM=<4>] -> 'letter' 'four'
+NP[NUM=sg, SEM=<5>] -> 'letter' 'five'
+NP[NUM=sg, SEM=<6>] -> 'letter' 'six'
+NP[NUM=sg, SEM=<7>] -> 'letter' 'seven'
+NP[NUM=sg, SEM=<8>] -> 'letter' 'eight'
+NP[NUM=sg, SEM=<9>] -> 'letter' 'nine'
+NP[NUM=sg, SEM=<10>] -> 'letter' 'ten'
+
+
+
+TV[NUM=sg, SEM=<\m n.le(m,n)>] -> 'follows'
+TV[NUM=pl, SEM=<\m n.le(m,n)>] -> 'follow'
+
+TV[NUM=sg, SEM=<\m n.le(n,m)>] -> 'precedes'
+TV[NUM=pl, SEM=<\m n.le(n,m)>] -> 'precede'
+
+
+
+###### MODIFICATION ######
+
+# Adding feature PRED to DP and related rules
+
+Det[STR= no, NUM=sg, PRED= no, SEM=<\P Q.exists n.(P(n) & Q(n))>] -> 'a'
+Det[STR= no, NUM=sg, PRED= yes, SEM=<\P. P>] -> 'a'
+
+Det[STR= no, NUM=sg, PRED= no, SEM=<\P Q.exists n.(P(n) & Q(n))>] -> 'an'
+Det[STR= no, NUM=sg, PRED= yes, SEM=<\P. P>] -> 'an'
+
+DP[NUM=?b, STR=?s, PRED=?d, SEM=<?X(?P)>] -> Det[STR=?s, NUM=?b, PRED=?d, SEM=?X] N[NUM=?b, SEM=?P]
+DP[NUM=?b, STR=?s, PRED=?d, SEM=<?X(?P)>] -> Det[STR=?s, NUM=?b, PRED=?d, SEM=?X] NP[NUM=?b, SEM=?P]
+DP[NUM=?b, STR=yes, SEM=<?X(?P)>] -> ADV[STR=?s, SEM=?X] DP[NUM=?b, STR=yes, SEM=?P]
+NP[SEM=?Q, NUM=?b] -> N[SEM=?Q, NUM=?b]
+NP[SEM=<\n.(?Q(n) & ?P(n))>, NUM=?b] -> A[SEM=?Q] N[SEM=?P, NUM=?b]
+
+VP[NUM=sg, SEM=?Q] -> 'is' A[SEM=?Q]
+VP[NUM=sg, SEM=?Q] -> 'is' DP[SEM=?Q, PRED=yes]
+VP[NUM=sg, SEM=?Q] -> 'is' NP[SEM=?Q]
+
+VP[NUM=pl, SEM=?Q] -> 'are' A[SEM=?Q]
+VP[NUM=pl, SEM=?Q] -> 'are' DP[SEM=?Q, PRED=yes]
+VP[NUM=pl, SEM=?Q] -> 'are' NP[SEM=?Q]
+
+VP[NUM=pl, SEM=?Q] -> 'are' N[NUM=pl, SEM=?Q]
+
+
+# Adjacent to NP construction
+VP[NUM=sg, SEM=<\x.(?P(?n)(x) & ?R(?n)(x))>] -> 'is' ADV[SEM=?P] A[SEM=?R] P NP[SEM=?n]
+VP[NUM=pl, SEM=<\x.(?P(?n)(x) & ?R(?n)(x))>] -> 'are' ADV[SEM=?P] A[SEM=?R] P NP[SEM=?n]
+
+VP[NUM=sg, SEM=<\x.(?P(?n)(x) & ?R(?n)(x))>] -> 'is' ADV[SEM=?P] A[SEM=?R] P DP[SEM=?n, PRED=no]
+VP[NUM=pl, SEM=<\x.(?P(?n)(x) & ?R(?n)(x))>] -> 'are' ADV[SEM=?P] A[SEM=?R] P DP[SEM=?n, PRED=no]
+
+
+# COORDINATION
+A[SEM=<\n.(?Q(n) & ?P(n))>] -> A[SEM=?Q] 'and' A[SEM=?P]
+A[SEM=<\n.(?Q(n) | ?P(n))>] -> A[SEM=?Q] 'or' A[SEM=?P]
+
+DP[SEM=<\n.(?Q(n) & ?P(n))>, PRED=?c] -> DP[PRED=?c, SEM=?Q] 'and' DP[PRED=?c, SEM=?P]
+DP[SEM=<\n.(?Q(n) | ?P(n))>, PRED=?c] -> DP[PRED=?c, SEM=?Q] 'or' DP[PRED=?c, SEM=?P]
+
+VP[NUM=sg, SEM=<\n.(?Q(n) & ?P(n))>] -> 'is' DP[SEM=?Q, PRED=yes] 'and' A[SEM=?P]
+VP[NUM=sg, SEM=<\n.(?Q(n) | ?P(n))>] -> 'is' DP[SEM=?Q, PRED=yes] 'or' A[SEM=?P]
+
+VP[NUM=pl, SEM=<\n.(?Q(n) & ?P(n))>] -> 'are' DP[SEM=?Q, PRED=yes] 'and' A[SEM=?P]
+VP[NUM=pl, SEM=<\n.(?Q(n) | ?P(n))>] -> 'are' DP[SEM=?Q, PRED=yes] 'or' A[SEM=?P]
+
+
+# NEGATION
+NEG[SEM=<\P x.not P(x)>] -> 'not'
+
+DP[SEM=<?P(?Q)>, PRED=?b] -> NEG[SEM=?P] DP[SEM=?Q,PRED=?b]
+NP[SEM=<?P(?Q)>] -> NEG[SEM=?P] NP[SEM=?Q]
+N[SEM=<?P(?Q)>] -> NEG[SEM=?P] N[SEM=?Q]
+A[SEM=<?P(?Q)>] -> NEG[SEM=?P] A[SEM=?Q]
+
+
+# EITHER OR
+DP[NUM=?b, SEM=<\n.(?Q(n) | ?P(n))>] -> 'either' DP[NUM=?a, SEM=?Q, PRED=?c] 'or' DP[NUM=?b, SEM=?P, PRED=?c]
+
+VP[NUM=?b, SEM=<\n.(?Q(n) | ?P(n))>] -> 'either' VP[NUM=?b, SEM=?Q] 'or' VP[NUM=?b, SEM=?P]
+A[SEM=<\n.(?Q(n) | ?P(n))>] -> 'either' A[SEM=?Q] 'or' A[SEM=?P]
+
+DP[SEM=<\n.(?Q(n) | ?P(n))>,PRED=?c] -> 'either' A[SEM=?Q] 'or' DP[SEM=?P,PRED=?c]
+DP[SEM=<\n.(?Q(n) | ?P(n))>,PRED=?c] -> 'either' DP[SEM=?Q,PRED=?c] 'or' A[SEM=?P]
+
+
+# NEITHER NOR
+
+DP[SEM=<\n. -(?P(n) | ?Q(n))>, PRED=yes] -> "neither" DP[SEM=?Q, PRED=yes] "nor" DP[SEM=?P, PRED=yes]
+
+
+# Recursive adjectives (using predicate modification)
+A[SEM=<\x.(?P(x) & ?Q(x))>] -> A[SEM=?P] A[SEM=?Q]
+
+
+# Existential constructions
+
+S[SEM=<exists c. ?subj(c)>] -> 'there' 'is' NP[STR=no, NUM=sg, SEM=?subj]
+S[SEM=<exists c. ?subj(c)>] -> 'there' 'are' NP[STR=no, NUM=pl, SEM=?subj]
+
+S[SEM=<?subj(?P)>] -> THEREP[SEM=?P, NUM=?b] DP[STR=no, PRED=no, NUM=?b, SEM=?subj]
+
+THEREP[SEM=<\n. exists c. char(n,c)>, NUM=pl] -> 'there' 'are'
+THEREP[SEM=<\n. exists c. char(n,c)>, NUM=sg] -> 'there' 'is'
+
+
+# PASSIVE
+
+VP[NUM=?b, SEM=<\x.(?R(?n)(x))>] -> 'is' TV[NUM=?b, SEM=?R] NP[NUM=?b, SEM=?n]
+
+VP[NUM=sg, SEM=<\m.?X(\n.(?R(n)(m)))>] -> 'is' TV[NUM=?b, SEM=?R] NP[SEM=?X, PRED=no]
+VP[NUM=pl, SEM=<\m.?X(\n.(?R(n)(m)))>] -> 'are' TV[NUM=?b, SEM=?R] NP[SEM=?X, PRED=no]
+
+VP[NUM=sg, SEM=<\m.?X(\n.(?R(n)(m)))>] -> 'is' TV[NUM=?b, SEM=?R] DP[SEM=?X, PRED=no]
+VP[NUM=pl, SEM=<\m.?X(\n.(?R(n)(m)))>] -> 'are' TV[NUM=?b, SEM=?R] DP[SEM=?X, PRED=no]
+
+TV[SEM=<\m n.le(n,m)>] -> 'followed' 'by'
+TV[SEM=<\m n.le(m,n)>] -> 'preceded' 'by'
+TV[SEM=<\m n.(le(m,n)&le(n,m))>] -> 'surrounded' 'by'
+
+# LEXICAL
+Det[SEM=<\n Q.exists h.all m.(char(n,h) & (m!=n -> (Q(n) & -Q(m))))>] -> 'only'
+Det[STR=no, NUM=sg, SEM=<\P Q.exists n.(P(n) & Q(n) & all m.((P(m) & Q(m)) -> eq(m,n)))>] -> 'only' 'one'
+ADV[SEM=<\n m.exists c.(ad(n,m) and char(n,c))>] -> 'directly'
+Det[STR=no, SEM=<\P Q.exists n.(P(n) & Q(n))>] -> 'most'
+A[SEM=<\n.exists c.(vowel(c) & char(n,c))>] -> 'vocalized'
+A[SEM=<\n.exists c.(-capital(c) & char(n,c))>] -> 'lowercase'
+Det[STR=no, NUM=sg, SEM=<\P Q.exists n.(P(n) & Q(n) & all m.((P(m) & Q(m)) -> eq(m,n)))>] -> 'exactly' 'one'
+Det[STR=no, NUM=sg, SEM=<\P Q.exists n.(P(n)&Q(n))>] -> 'at' 'least' 'one'
+Det[STR=no, NUM=sg, SEM=<\P Q.exists m n.(P(n) & Q(n) & P(m) & Q(m) & m!=n)>] -> 'at' 'least' 'two'
+Det[STR=no, NUM=sg, SEM=<\P Q.exists m n.(P(n) & Q(n) & P(m) & Q(m) & m!=n)>] -> 'more' 'than' 'one'
+
+A[SEM=<\n.exists c.(capital(c) & char(n,c))>] -> 'capitalized'
+A[SEM=<\n.capital(c)>] -> 'capital'
+
+A[SEM=<\n.exists c.(voiced(n,c))>] -> 'voiced'
+A[SEM=<\n.exists c.(-voiced(n,c))>] -> 'unvoiced'
+
+A[SEM=<\n. exists c. (char(n,c) & even(n))>] -> 'even'
+A[SEM=<\n. exists c. (char(n,c) & odd(n))>] -> 'odd'
+A[SEM=<\n. exists c. (char(n,c) & mirrored(n))>] -> 'mirrored'
+
+N[NUM=sg, SEM=<\n.exists c.(liquid(c) & char(n,c))>] -> 'liquid'
+N[NUM=pl, SEM=<\n.exists c.(liquid(c) & char(n,c))>] -> 'liquids'
+
+N[NUM=sg, SEM=<\n.exists c.(plosive(c) & char(n,c))>] -> 'plosive'
+N[NUM=pl, SEM=<\n.exists c.(plosive(c) & char(n,c))>] -> 'plosives'
+
+N[NUM=sg, SEM=<\n.exists c.(nasal(c) & char(n,c))>] -> 'nasal'
+N[NUM=pl, SEM=<\n.exists c.(nasal(c) & char(n,c))>] -> 'nasals'
+
+A[SEM=<\n.exists c.(alphabet(c) & char(n,c))>] -> 'alphabetical'
+
+NP[NUM=sg, SEM=<1>] -> 'the' 'first' 'letter'
+NP[NUM=sg, SEM=<2>] -> 'the' 'second' 'letter'
+NP[NUM=sg, SEM=<3>] -> 'the' 'third' 'letter'
+NP[NUM=sg, SEM=<4>] -> 'the' 'fourth' 'letter'
+NP[NUM=sg, SEM=<5>] -> 'the' 'fifth' 'letter'
