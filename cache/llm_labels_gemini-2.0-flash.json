@@ -1,0 +1,422 @@
+{
+  "aiden-a-1": [
+    {
+      "test_string": "aTqF",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "Attq",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "Atta",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "AAAA",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "tstt",
+      "llm_label": false,
+      "author_label": "u"
+    },
+    {
+      "test_string": "ieou",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "euEu",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "THHH",
+      "llm_label": false,
+      "author_label": "u"
+    }
+  ],
+  "aiden-a-2": [
+    {
+      "test_string": "aTqF",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "Attq",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "Atta",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "AAAA",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "tstt",
+      "llm_label": false,
+      "author_label": "u"
+    },
+    {
+      "test_string": "ieou",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "euEu",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "THHH",
+      "llm_label": false,
+      "author_label": "u"
+    }
+  ],
+  "aiden-a-3": [
+    {
+      "test_string": "agqF",
+      "llm_label": false,
+      "author_label": "u"
+    },
+    {
+      "test_string": "Atya",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "yayt",
+      "llm_label": true,
+      "author_label": "f"
+    },
+    {
+      "test_string": "AAAA",
+      "llm_label": false,
+      "author_label": "u"
+    },
+    {
+      "test_string": "yaYi",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "yyyy",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "euEy",
+      "llm_label": true,
+      "author_label": "f"
+    },
+    {
+      "test_string": "aYaa",
+      "llm_label": true,
+      "author_label": "t"
+    }
+  ],
+  "aiden-a-4": [
+    {
+      "test_string": "aT",
+      "llm_label": false,
+      "author_label": "u"
+    },
+    {
+      "test_string": "Attqa",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "AttaT",
+      "llm_label": false,
+      "author_label": "t"
+    },
+    {
+      "test_string": "AAAAt",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "tstta",
+      "llm_label": true,
+      "author_label": "f"
+    },
+    {
+      "test_string": "ieOuli",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "edhGHth",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "THHHa",
+      "llm_label": true,
+      "author_label": "f"
+    }
+  ],
+  "aiden-a-5": [
+    {
+      "test_string": "aTqF",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "Attq",
+      "llm_label": true,
+      "author_label": "f"
+    },
+    {
+      "test_string": "AtTa",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "AAAA",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "tsit",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "ieou",
+      "llm_label": false,
+      "author_label": "t"
+    },
+    {
+      "test_string": "eu",
+      "llm_label": false,
+      "author_label": "u"
+    },
+    {
+      "test_string": "THHH",
+      "llm_label": false,
+      "author_label": "t"
+    }
+  ],
+  "aiden-a-6": [
+    {
+      "test_string": "aTqF",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "Atta",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "Atta",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "AAAA",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "tsit",
+      "llm_label": true,
+      "author_label": "f"
+    },
+    {
+      "test_string": "ieou",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "e",
+      "llm_label": false,
+      "author_label": "u"
+    },
+    {
+      "test_string": "TiHH",
+      "llm_label": true,
+      "author_label": "t"
+    }
+  ],
+  "aiden-a-7": [
+    {
+      "test_string": "aTqF",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "Atta",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "ttQQ",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "AaaA",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "tttt",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "atti",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "rttr",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "THHH",
+      "llm_label": true,
+      "author_label": "f"
+    }
+  ],
+  "aiden-a-8": [
+    {
+      "test_string": "aTqF",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "Atty",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "yyyy",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "YyyY",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "tstt",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "ieou",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "euEY",
+      "llm_label": true,
+      "author_label": "t"
+    },
+    {
+      "test_string": "THHH",
+      "llm_label": false,
+      "author_label": "f"
+    }
+  ],
+  "aiden-a-9": [
+    {
+      "test_string": "aTqF",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "Ataa",
+      "llm_label": false,
+      "author_label": "t"
+    },
+    {
+      "test_string": "Atta",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "AgaTt",
+      "llm_label": false,
+      "author_label": "t"
+    },
+    {
+      "test_string": "tst",
+      "llm_label": false,
+      "author_label": "t"
+    },
+    {
+      "test_string": "ieouiou",
+      "llm_label": false,
+      "author_label": "t"
+    },
+    {
+      "test_string": "euIu",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "THHH",
+      "llm_label": false,
+      "author_label": "f"
+    }
+  ],
+  "aiden-a-10": [
+    {
+      "test_string": "aTqF",
+      "llm_label": false,
+      "author_label": "t"
+    },
+    {
+      "test_string": "Ataa",
+      "llm_label": false,
+      "author_label": "t"
+    },
+    {
+      "test_string": "Atta",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "AgaTt",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "tst",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "ieouiou",
+      "llm_label": false,
+      "author_label": "f"
+    },
+    {
+      "test_string": "euTu",
+      "llm_label": false,
+      "author_label": "t"
+    },
+    {
+      "test_string": "THHH",
+      "llm_label": false,
+      "author_label": "t"
+    }
+  ]
+}
