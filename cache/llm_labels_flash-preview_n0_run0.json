@@ -1,0 +1,29 @@
+{
+  "aiden-a-1": [
+    {
+      "test_string": "aTqF",
+      "llm_label": "ERROR:ResourceExhausted",
+      "author_label": false
+    },
+    {
+      "test_string": "AAAA",
+      "llm_label": "ERROR:ResourceExhausted",
+      "author_label": true
+    },
+    {
+      "test_string": "ieou",
+      "llm_label": "ERROR:ResourceExhausted",
+      "author_label": false
+    },
+    {
+      "test_string": "Atta",
+      "llm_label": "ERROR:ResourceExhausted",
+      "author_label": true
+    },
+    {
+      "test_string": "Attq",
+      "llm_label": "ERROR:ResourceExhausted",
+      "author_label": true
+    }
+  ]
+}

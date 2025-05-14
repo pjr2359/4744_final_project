@@ -1,0 +1,152 @@
+[
+  [
+    "EVERY LETER THAT FOLLOWS A CONSONANT IS VOCALIC",
+    "sokka",
+    false
+  ],
+  [
+    "EVERY VOWEL IS UNIQUE AND FINAL",
+    "hel",
+    false
+  ],
+  [
+    "NO CONSONANT IS ADJACENT TO A GLIDE",
+    "dawn",
+    false
+  ],
+  [
+    "NO CONSONANT IS UNIQUE",
+    "AaaA",
+    true
+  ],
+  [
+    "SOME GLIDE THAT LETTER FOUR FOLLOWS IS UNVOICED AND CAPITALIZED OR IS FINAL",
+    "wwW",
+    false
+  ],
+  [
+    "THE LETTER THAT IMMEDIATELY PRECEDES LETTER FOUR IS LETTER THREE",
+    "clocK",
+    true
+  ],
+  [
+    "AT LEAST ONE GLIDE IS REPEATED",
+    "yyaaww",
+    true
+  ],
+  [
+    "EVERY VOWEL THAT LETTER ONE PRECEDES PRECEDES A UNVOICED CENTERED EVEN GLIDE",
+    "bree",
+    false
+  ],
+  [
+    "EVERY CONSONANT THAT LETTER TWO PRECEDES IS VOICED OR UNVOICED AND NO K IS CONSONANTAL AND CAPITAL",
+    "i",
+    true
+  ],
+  [
+    "A GLIDE IS UNIQUE",
+    "wwwhattt",
+    false
+  ],
+  [
+    "SOME FRICATIVES PRECEDE LETTER TWO OR FOLLOW LETTER FOUR AND ARE ADJACENT TO LETTER THREE",
+    "woei",
+    false
+  ],
+  [
+    "NO CAPITAL LETTER FOLLOWS A FRICATIVE OR MORE THAN ONE VOWEL AND AT LEAST ONE GLIDE",
+    "fayyf",
+    true
+  ],
+  [
+    "ONLY LETTER TWO IS UNIQUE AND IS VOICED",
+    "fbss",
+    true
+  ],
+  [
+    "THERE IS EXACTLY ONE LETTER THAT PRECEDES A D",
+    "DAU",
+    false
+  ],
+  [
+    "THE LETTER THAT PRECEDES LETTER FIVE IS A VOWEL",
+    "AttaT",
+    true
+  ],
+  [
+    "NO VOWEL IS VOICED AND IS FINAL",
+    "piti",
+    false
+  ],
+  [
+    "THE LETTER THAT IMMEDIATELY PRECEDES LETTER FOUR IS LETTER THREE",
+    "PAPAYA",
+    true
+  ],
+  [
+    "EVERY U THAT LETTER THREE IS ADJACENT TO IS CAPITALIZED AND FINAL",
+    "ottUr",
+    false
+  ],
+  [
+    "LETTER ONE IS UNIQUE",
+    "h",
+    true
+  ],
+  [
+    "ALL VOWELS ARE NOT VOICED AND THERE IS NO U THAT FOLLOWS SOME GLIDES",
+    "pay",
+    false
+  ],
+  [
+    "THE PENULTIMATE LETTER IS NOT A VOWEL",
+    "ieou",
+    false
+  ],
+  [
+    "EXACTLY ONE CONSONANT IS PENULTIMATE",
+    "SHOULD",
+    true
+  ],
+  [
+    "EVERY VOCALIC EVEN LETTER THAT PRECEDES SOME VOWEL IS A I AND IMMEDIATELY FOLLOWS A GLIDE",
+    "AAAA",
+    false
+  ],
+  [
+    "NO CONSONANT IS ADJACENT TO A GLIDE",
+    "some",
+    true
+  ],
+  [
+    "ALL MIRRORED LETTERS ARE NOT CAPITALIZED",
+    "mAm",
+    true
+  ],
+  [
+    "ONLY LETTER TWO IS UNIQUE",
+    "tst",
+    true
+  ],
+  [
+    "ONLY VOWELS ARE CAPITALIZED",
+    "A",
+    true
+  ],
+  [
+    "THERE ARE SOME GLIDES THAT ARE CENTERED",
+    "fawn",
+    false
+  ],
+  [
+    "NO CONSONANT IS A T",
+    "incredible",
+    true
+  ],
+  [
+    "SOME VOWELS PRECEDE A UNIQUE CONSONANT OR MORE THAN ONE VOCALIC EVEN LETTER AND ARE CAPITALIZED",
+    "Odd",
+    false
+  ]
+]
