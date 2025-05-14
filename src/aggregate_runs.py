@@ -49,6 +49,10 @@ def main():
     for model, files_list in model_files.items():
         print(f"  {model}: {len(files_list)} files")
     
+    # Filter out flash-preview files
+    files = [f for f in files if "flash-preview" not in f]
+    print(f"\nAnalyzing {len(files)} files (excluding flash-preview)")
+    
     df=pd.DataFrame([x for f in files for x in flatten(f)])
     
     # Count samples per model-n-run combination to filter out incomplete runs
@@ -136,6 +140,10 @@ def main():
     
     # Completely rewrite the plotting logic with explicit x and y values
     for model in sorted(avg.index):
+        # Skip flash-preview model
+        if "flash-preview" in model:
+            continue
+        
         # Get valid pairs of (n, accuracy) for this model
         x_values = []
         y_values = []
@@ -147,45 +155,32 @@ def main():
         # Print the data points for this model
         print(f"\nPlotting {model} points: x={x_values}, y={y_values}")
         
+        # Map the model names to more readable labels
+        model_label = model
+        if model == "labels_flash":
+            model_label = "2.0 flash"
+        elif model == "labels_flash-lite":
+            model_label = "2.0 flash lite"
+        elif model == "labels_pro":
+            model_label = "1.5 pro"
+        
         # Use different styles for different models
         if 'preview' in model:
             # For flash-preview, use green color with diamond markers
             if len(x_values) >= 2:
                 # With multiple points, connect them with lines
-                # Only plot the points we actually have - no extrapolation
-                for i, (x, y) in enumerate(zip(x_values, y_values)):
-                    if i == 0:  # First point gets the label
-                        plt.plot(x, y, 'D', color='green', markersize=10, label=model)
-                    else:
-                        plt.plot(x, y, 'D', color='green', markersize=10)
-                
-                # Explicitly check which points we have before drawing lines
-                available_xs = set(x_values)
-                if 0 in available_xs and 24 in available_xs:
-                    # Draw a direct line between 0 and 24 if those are the only points
-                    ind_0 = x_values.index(0)
-                    ind_24 = x_values.index(24)
-                    plt.plot([0, 24], [y_values[ind_0], y_values[ind_24]], '-', color='green', linewidth=2)
-                elif 0 in available_xs and 8 in available_xs:
-                    # Draw line between 0 and 8
-                    ind_0 = x_values.index(0)
-                    ind_8 = x_values.index(8)
-                    plt.plot([0, 8], [y_values[ind_0], y_values[ind_8]], '-', color='green', linewidth=2)
-                elif 8 in available_xs and 24 in available_xs:
-                    # Draw line between 8 and 24
-                    ind_8 = x_values.index(8)
-                    ind_24 = x_values.index(24)
-                    plt.plot([8, 24], [y_values[ind_8], y_values[ind_24]], '-', color='green', linewidth=2)
+                plt.plot(x_values, y_values, '-D', color='green', linewidth=2, 
+                         markersize=8, label=model)
             else:
                 # With single point, just show the marker
                 plt.plot(x_values, y_values, 'D', color='green', markersize=10,
                          label=f"{model} (n={x_values[0]})")
         else:
             # For other models, use default styling with circles
-            plt.plot(x_values, y_values, '-o', linewidth=2, label=model)
+            plt.plot(x_values, y_values, '-o', linewidth=2, label=model_label)
     
     # Set y-axis to reasonable range based on data
-    plt.ylim(0.4, 0.75)
+    plt.ylim(0.6, 0.72)  # Smaller range to highlight differences
     
     # Force x axis to use integer ticks at the actual n-values
     plt.xticks(sorted(all_n_values))

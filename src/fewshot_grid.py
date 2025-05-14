@@ -184,6 +184,12 @@ if __name__ == "__main__":
     ap.add_argument("--test", action="store_true", help="Run a small test with 5 samples")
     args = ap.parse_args()
 
+    # Skip flash-preview as it's not working properly
+    if "flash-preview" in args.model:
+        print("ERROR: flash-preview model is disabled due to ResourceExhausted issues.")
+        print("Please use a different model like 'pro' or 'flash' instead.")
+        exit(1)
+        
     Ns   = [args.single_n] if args.single_n is not None else N_VALUES
     runs = 1 if args.model.endswith("preview") else K_RUNS
 
