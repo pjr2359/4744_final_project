@@ -19,7 +19,7 @@ from google.api_core.exceptions import ResourceExhausted
 from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
 from tqdm import tqdm
 
-# ── model options ──────────────────────────────────────────────────
+# ── models ──────────────────────────────────────────────────
 MODEL_CONFIGS = {
     "flash-lite":   {"model_id": "gemini-2.0-flash-lite",      "rpm": 4000},
     "flash":        {"model_id": "gemini-2.0-flash",           "rpm": 2000},
@@ -33,7 +33,7 @@ def parse_args():
     p.add_argument("--model", choices=MODEL_CONFIGS, default="flash-lite")
     return p.parse_args()
 
-# ── prompt builder (no few‑shots) ─────────────────────────────────
+# ── prompt (no few‑shots) ─────────────────────────────────
 def build_prompt(rule: str, s: str):
     return [
         {"role": "user", "parts": [

@@ -20,7 +20,7 @@ from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_excep
 # ───────────────────── shared request bucket ──────────────────────
 from src.query_llm import MODEL_CONFIGS, _claim_token, REQUEST_TIMESTAMPS
 
-# ────────────────────── demo pool (unchanged) ─────────────────────
+# ────────────────────── demo pool  ─────────────────────
 FEWSHOT_POOLS: List[Tuple[str, str, bool]] = [
     ("every leter that follows a consonant is vocalic", "sokka", False),
     ("every vowel is unique and final", "hel", False),
@@ -104,11 +104,11 @@ def _messages(rule: str, s: str, shots):
     reraise=True,
 )
 def call_gemini(model, rpm: int, rule: str, s: str, shots) -> bool|Literal["SAFETY"]:
-    _claim_token(rpm)                     # only request bucket – tokens << 1 M/min
+    _claim_token(rpm)                     # only request bucket – tokens  1 M/min
     
     # Add extra delay for flash-preview to avoid ResourceExhausted errors
     if "flash-preview" in model.model_name:
-        time.sleep(random.uniform(0.5, 1.0))  # Add significant delay
+        time.sleep(random.uniform(0.5, 1.0))  
     
     rsp = model.generate_content(_messages(rule, s, shots),
                                  generation_config=GEN_CFG,
@@ -124,12 +124,12 @@ def safe_call(model, rpm, rule, s, shots):
     try:
         return call_gemini(model, rpm, rule, s, shots)
     except Exception as e:
-        # Special handling for ResourceExhausted with flash-preview
+        # ResourceExhausted with flash-preview
         if isinstance(e, ResourceExhausted) and "flash-preview" in model.model_name:
             print(f"ResourceExhausted for flash-preview, sleeping 5s...")
-            time.sleep(5.0)  # Long sleep on resource exhausted
+            time.sleep(5.0)  # Long sleep if resource exhausted
             try:
-                # One more try with longer wait
+                #   longer wait
                 time.sleep(random.uniform(1.0, 2.0))
                 return call_gemini(model, rpm, rule, s, shots)
             except Exception:
@@ -145,13 +145,13 @@ def run_grid(model_key: str, n: int, run: int, test_mode: bool = False):
     shots = build_fewshot(n)
     data  = load_pairs()
     if test_mode:
-        data = data[:5]  # Just 5 samples for quick testing
+        data = data[:5]  #  5 samples for testing
         print(f"TEST MODE: Using only {len(data)} samples")
     total = len(data)
 
-    # Much lower thread count for flash-preview to avoid resource exhaustion
+    #  lower thread count for flash-preview to avoid resource exhaustion
     if model_key.endswith("flash-preview"):
-        pool = 4  # Very limited concurrency for preview model
+        pool = 4  
     else:
         pool = min(int(rpm/60*0.8), 24)
     name = f"{model_key}-n{n}-r{run}"
@@ -184,7 +184,7 @@ if __name__ == "__main__":
     ap.add_argument("--test", action="store_true", help="Run a small test with 5 samples")
     args = ap.parse_args()
 
-    # Skip flash-preview as it's not working properly
+    # Skip flash-preview still doesn't work
     if "flash-preview" in args.model:
         print("ERROR: flash-preview model is disabled due to ResourceExhausted issues.")
         print("Please use a different model like 'pro' or 'flash' instead.")
@@ -195,4 +195,4 @@ if __name__ == "__main__":
 
     for N, R in itertools.product(Ns, range(runs)):
         run_grid(args.model, N, R, test_mode=args.test)
-        REQUEST_TIMESTAMPS.clear()   # clean slate for next cell
+        REQUEST_TIMESTAMPS.clear()   

@@ -22,8 +22,7 @@ def flatten(path):
             llm_label = obj["llm_label"]
             if isinstance(llm_label, str):
                 if llm_label == "ERROR":
-                    continue  # Skip error responses
-                # Convert string "True"/"False" to actual boolean
+                    continue  
                 llm_label = llm_label.lower().startswith('t')
             
             rows.append(dict(model=m, n=int(n), run=int(r),
@@ -49,7 +48,7 @@ def main():
     for model, files_list in model_files.items():
         print(f"  {model}: {len(files_list)} files")
     
-    # Filter out flash-preview files
+    
     files = [f for f in files if "flash-preview" not in f]
     print(f"\nAnalyzing {len(files)} files (excluding flash-preview)")
     
@@ -70,7 +69,7 @@ def main():
     df = df.merge(valid_runs[['model', 'n', 'run']], on=['model', 'n', 'run'])
     print(f"\nFiltered data shape: {df.shape}")
     
-    # Print some diagnostics
+   
     print("\nData shape:", df.shape)
     print("\nModel distribution:")
     print(df['model'].value_counts())
@@ -104,7 +103,7 @@ def main():
     summary=(df.groupby(["model","n","run"])["correct"].mean()
                .reset_index(name="accuracy"))
     
-    # Print accuracy per model, n, and run for debugging
+    #  debugging prints
     print("\nAccuracy per model, n, run:")
     for model in summary['model'].unique():
         print(f"\n{model}:")
@@ -140,7 +139,7 @@ def main():
     
     # Completely rewrite the plotting logic with explicit x and y values
     for model in sorted(avg.index):
-        # Skip flash-preview model
+       
         if "flash-preview" in model:
             continue
         
